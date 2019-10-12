@@ -3,36 +3,53 @@
 
 <head>
     <style>
+        @media screen and (max-width: 460px) {
+            .card {
+                width: 65%;
+            }
+            
+            .menu-bar{
+                display: none;
+            }
+
+        }
+
         section {
             width: 500px;
             margin-left: auto;
-            margin-right: auto;
+            margin-right: 260px;
         }
 
         nav {
-            left: 0; bottom: 0;
             width: 100%;
-            margin-top: 600px;
-            position: fixed;
-            padding: 2px;
-            background-color: black;
+            background-color: darksalmon;
             text-align: center;
-            z-index: 3;
         }
 
         nav a {
-            color: white;
-            border: 1px solid red;
+            color: black;
             padding-left: 50px;
             padding-right: 50px;
             margin: -3px;
             text-decoration: none;
+            font-size: 20px;
         }
 
+        nav a:hover {
+            background-color: bisque;
+        }
+
+        .icon:hover {
+            width: 40px;
+
+        }
+
+
         body {
-            
-            width: 100%;
-            height: 100%;
+            background-image: url("image/marbel.jpg");
+            background-position: 50% 50%;
+            background-repeat: repeat;
+
         }
 
         .overlay {
@@ -43,7 +60,8 @@
             height: 100%;
             z-index: 10;
             background-color: rgba(0, 0, 0, 0.5);
-            
+            /*dim the background*/
+
         }
 
         body:active .overlay {
@@ -66,8 +84,6 @@
         }
 
         .card {
-            margin-top: 40px;
-            top: 30px;
             width: 150px;
             height: 160px;
             display: table;
@@ -75,20 +91,31 @@
             border: 2px solid blue;
             border-radius: 5px;
             margin: 3px;
+            background-color: blanchedalmond;
         }
 
         .title {
-            position: relative;
-            top: -23px;
+            text-align: center;
 
-            width: 110px;
-            color: white;
-            margin-right: 3px;
+        }
+
+        .menu-bar {
+            position: relative;
+            margin-right: 100px;
+            width: 300px;
+            height: 800px;
+            display: table;
             float: left;
-            bottom: 180px;
-            background-color: blue;
-            margin-top: -150px;
-            z-index: 2;
+            border: 2px solid blue;
+            border-radius: 5px;
+            margin: 3px;
+            background-color:whitesmoke;   
+        }
+        .menu-bar a{
+            text-decoration: none;
+            font-size: 20px;
+        }
+            
         }
 
         .price {
@@ -99,7 +126,7 @@
 
         .icon {
             position: relative;
-            margin-top: -169px;
+            margin-top: -189px;
             margin-right: 2px;
             float: right;
             z-index: 2;
@@ -112,62 +139,52 @@
         }
 
         /* Write your code here */
+
     </style>
 </head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <body>
-    <div class="overlay">
-        <div class="alert">
-            <h1>Welcome to Wheels.kz</h1>
-            <p>If you have any questions, please contact us by no: 87017023535</p>
-            <p>The best cars with the best prices are present on our website and application</p>
-        </div>
-    </div>
+
     <header>
+       
+       <div class="logo">
+           
+       </div>
         <nav>
+           <img src="image/grafician_random.png" width="60px;">
             <a href="#">Home</a>
             <a href="#">Prices</a>
             <a href="#">Contacts</a>
             <a href="#">Opportunities</a>
         </nav>
+        <div class="hat">
+            <img src="image/unsplash-image-1.jpg" width="100%" height="150px">
+
+        </div>
     </header>
+    <div class="menu-bar">
+        <ul>
+            <li><a href="default.asp">Cloth</a></li>
+            <li><a href="news.asp">T-Shirt</a></li>
+            <li><a href="contact.asp">Pants</a></li>
+            <li><a href="about.asp">Lorem ipsum</a></li>
+        </ul>
+    </div>
+
     <section>
         <div class="card first">
             <img src="http://via.placeholder.com/150x150" />
             <div class="price">10.000 $</div>
             <div class="title">BMW X6</div>
-            <a href="#"><img width="30px" class="icon" src="https://image.flaticon.com/icons/png/512/2/2772.png" /></a>
+            <a href="#"><img width="30px" class="icon" src="image/like--v1.png" /></a>
         </div>
 
         <div class="card">
             <img src="http://via.placeholder.com/150x150" />
             <div class="price">10.000 $</div>
             <div class="title">Mercedes C100</div>
-            <a href="#"><img width="30px" class="icon" src="https://image.flaticon.com/icons/png/512/2/2772.png" /></a>
-        </div>
-        <div class="card">
-            <img src="http://via.placeholder.com/150x150" />
-            <div class="price">10.000 $</div>
-            <div class="title">Mercedes C100</div>
-            <a href="#"><img width="30px" class="icon" src="https://image.flaticon.com/icons/png/512/2/2772.png" /></a>
-        </div>
-        <div class="card">
-            <img src="http://via.placeholder.com/150x150" />
-            <div class="price">10.000 $</div>
-            <div class="title">Mercedes C100</div>
-            <a href="#"><img width="30px" class="icon" src="https://image.flaticon.com/icons/png/512/2/2772.png" /></a>
-        </div>
-        <div class="card">
-            <img src="http://via.placeholder.com/150x150" />
-            <div class="price">10.000 $</div>
-            <div class="title">Mercedes C100</div>
-            <a href="#"><img width="30px" class="icon" src="https://image.flaticon.com/icons/png/512/2/2772.png" /></a>
-        </div>
-        <div class="card">
-            <img src="http://via.placeholder.com/150x150" />
-            <div class="price">10.000 $</div>
-            <div class="title">Mercedes C100</div>
-            <a href="#"><img width="30px" class="icon" src="https://image.flaticon.com/icons/png/512/2/2772.png" /></a>
+            <a href="#"><img width="30px" class="icon" src="image/like--v1.png" /></a>
         </div>
 
 
@@ -175,28 +192,30 @@
             <img src="http://via.placeholder.com/150x150" />
             <div class="price">10.000 $</div>
             <div class="title">BMW X5</div>
-            <a href="#"><img width="30px" class="icon" src="https://image.flaticon.com/icons/png/512/2/2772.png" /></a>
+            <a href="#"><img width="30px" class="icon" src="image/like--v1.png" /></a>
         </div>
 
         <div class="card">
             <img src="http://via.placeholder.com/150x150" />
             <div class="price">10.000 $</div>
             <div class="title">Mitsibushi Outlander</div>
-            <a href="#"><img width="30px" class="icon" src="https://image.flaticon.com/icons/png/512/2/2772.png" /></a>
+            <a href="#"><img width="30px" class="icon" src="image/like--v1.png" /></a>
         </div>
 
         <div class="card">
             <img src="http://via.placeholder.com/150x150" />
             <div class="price">10.000 $</div>
             <div class="title">Audi A8</div>
-            <a href="#"><img width="30px" class="icon" src="https://image.flaticon.com/icons/png/512/2/2772.png" /></a>
+            <a href="#"><img width="30px" class="icon" src="image/like--v1.png" /></a>
         </div>
 
         <div class="card">
             <img src="http://via.placeholder.com/150x150" />
             <div class="price">10.000 $</div>
             <div class="title">BMW X6</div>
-            <a href="#"><img width="30px" class="icon" src="https://image.flaticon.com/icons/png/512/2/2772.png" /></a>
+            <a href="#"><img width="30px" class="icon" src="image/like--v1.png" /></a>
         </div>
     </section>
-</body></html>
+</body>
+
+</html>
