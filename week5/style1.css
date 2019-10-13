@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+p {
+    font-family: Raleway Light;
+}
+
+.task {
+    font-size: 10px;
+    font-family: Raleway Light;
+}
+
+
+#matrix {
+    display: flex;
+    width: 223px;
+    flex-wrap: wrap;
+
+}
+
+#matrix input {
+    width: 60px;
+    height: 50px;
+    padding: 5px;
+    font-size: 24px;
+    font-family: Raleway Light;
+}
+
+#result {
+    position: relative;
+    margin-bottom: 50px;
+    font-size:35px;
+    color: red;
+     bottom:200px;
+    margin-left: 250px;
+    font-family: Raleway Light;
+}
+
+#res {
+    width: 48px;;
+    position: relative;
+    font-family: Raleway Light;
+    margin-left: 250px;
+    bottom:220px;
+    background-color: dimgrey;
+    border-radius: 6px;
+    margin-right: auto;
+    font-size: 12px;
+    padding: 4px;
+    color: aliceblue;
+}
+#description{
+    position: relative;
+    font-family: Raleway Light;
+    margin-left: 250px;
+    bottom:220px;
+    font-size: 12px;
+    
+}
+
+#desc-text{
+    position: relative;
+    font-family: Raleway Light;
+    margin-left: 250px;
+    bottom:220px;
+    font-size: 15px;
+    
+}
+
+#determinant {
+    margin-top: 4px;
+    font-size: 20px;
+    color: dimgrey;
+    font-family: Raleway Light;
+    background-color: transparent;
+    border-left-color: aqua;
+    border-left-width: medium;
+}
