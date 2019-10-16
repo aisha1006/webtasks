@@ -1,0 +1,80 @@
+#carousel img {
+    width: 100px;
+    height: 60px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    margin: 4px;
+}
+
+#carousel {
+    width: auto;
+    padding: 9px;
+    position: fixed;
+    top: 450px;
+    left: 10px; `  
+    font-weight: bold;
+    margin: 4px;
+    background-color: white;
+    border-left: 6px solid indianred;
+    display: flex;
+    
+}
+
+#bigImage img {
+    margin: 10px;
+    display: grid;
+    top: 40px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5); 
+    width: 700px;
+    height: 500px;
+    position: fixed;
+    left: 45px;
+}
+
+.prev,
+.next {
+    padding-top: 3px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+    margin: 4px;
+    margin-top: 17px;
+    border-radius: 50px;
+    height: 25px;
+    width: 27px;
+    text-align: center;
+}
+
+.right-menu{
+    display: block;
+    position: fixed;
+    background-color: dimgray;
+    color: azure;
+    width: 330px;
+    height: 300px;
+    left: 700px;
+    padding: 30px;
+    padding-top: 250px;
+    padding-left: 80px;
+    font-family: Raleway Light;
+    font-weight: bold;
+}
+.showmore{
+    font-size: 20PX;
+    padding: 6px;
+    width: 300px;
+    margin-top: 50px;
+    font-family: Raleway Light;
+    border: 1px solid white;
+}
+p{
+    position: absolute;
+    font-family: Raleway Light;
+    font-size: 50px;
+    z-index: 4;
+    left: 530px;
+    width: 450px;
+    top: 50px;
+    color: azure;
+}
+.prev:hover,.next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
