@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Task 1</title>
+
+
+    <style>
+        html {
+            font-family: Raleway Light;
+            background: url(https://i.ibb.co/r783VbK/Untitled.png) no-repeat;
+            width: 1200px;
+            background-size: 1400px 2800px;
+
+        }
+
+        body {
+
+            padding-left: 18%;
+            padding-right: 10%;
+            color: aliceblue;
+            width: 900px;
+        }
+
+        .header {
+            position: sticky;
+            width: 100%;
+            height: 60px;
+            padding: 1px 1px;
+            display: inline-block;
+            border-bottom: 1px solid black;
+
+        }
+
+        .header img {
+            float: left;
+            width: 90px;
+            height: 25px;
+            margin-top: 13px;
+            margin-right: 20px;
+        }
+
+        div.main_menu p {
+            margin-right: 5px;
+            float: left;
+        }
+
+        div.right_menu p {
+            margin-right: 5px;
+            float: right;
+        }
+
+        .add_list {
+            border: 1px solid white;
+            border-radius: 50px;
+            padding: 1px;
+            margin-top: 14px;
+            margin-left: 7px;
+            padding-left: 9px;
+            padding-right: 9px;
+        }
+
+        .mid {
+            margin-top: 100px;
+        }
+
+        .discover {
+            font-size: 40px;
+        }
+
+        .search {
+            background-color: whitesmoke;
+            margin: 2px;
+            height: 110px;
+            border: 1px solid darkgray;
+            border-radius: 5px;
+            font-size: 15px;
+            font-family: Raleway Light;
+            margin-right: 20px;
+        }
+
+        input {
+            background-color: transparent;
+            margin: 70px 10px 80px 20px;
+            border: none;
+            border-bottom: 1px solid gray;
+        }
+
+        button {
+            background-color: transparent;
+            border: 1px solid coral;
+            font-family: Raleway Light;
+            border-radius: 50px;
+            background-image: url(https://img.icons8.com/pastel-glyph/2x/search.png);
+            background-size: 30px 30px;
+            background-position: left;
+            background-repeat: no-repeat;
+            padding: 6px 9px 5px 35px;
+
+        }
+
+        .foot {
+            margin-top: 120px;
+            display: table;
+        }
+
+        .country {
+
+            position: relative;
+            width: 220px;
+            height: 240px;
+        }
+
+        .foot div {
+            display: grid;
+        }
+
+
+
+        .country.icon {
+            width: 20px;
+            height: 200px;
+            margin-right: 30px;
+        }
+
+        .icon {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            z-index: 4;
+            bottom: 105px;
+            margin-left: 5px;
+        }
+
+        .price {
+            bottom: 40px;
+            position: relative;
+            color: white;
+            font-weight: bold;
+            margin-left: 30px;
+
+
+        }
+
+        .title {
+            bottom: 60px;
+            position: relative;
+            color: white;
+            font-weight: bold;
+            margin-left: 40px;
+        }
+
+        .card {
+            float: left;
+            width: 240px;
+            height: 220px;
+            z-index: 2;
+        }
+
+        
+
+    </style>
+</head>
+
+<body id="body">
+    <div class="zone-a">
+
+        <div class="header">
+            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Trip-logo-h-default-lg.png">
+            <div class="main_menu">
+                <p>Home</p>
+                <p>Pages</p>
+                <p>Contacts</p>
+            </div>
+            <div class="right_menu">
+                <p class="add_list"> + Add listing</p>
+                <p>Sign in</p>
+                <p>Register<p>
+            </div>
+        </div>
+        <div class="mid">
+            <p>Find out perfect place to hangout in your city</p>
+            <p class="discover">Discover great places</p>
+            <div class="search">
+                <input type="text" placeholder="Country">
+                <input type="text" placeholder="Place">
+                <input type="text" placeholder="Price">
+                <button type="submit"><i class="btn_search"></i> Search</button>
+            </div>
+            <p>Popular categories:Retaurants,vacation</p>
+
+        </div>
+    </div>
+    <div class="foot">
+        <h1>Top-rated Experience </h1>
+        <div class="card">
+            <img class="country" src="https://www.tripsavvy.com/thmb/3sgZDW_lR5uZFwZtO_at1qZh0FE=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-850621574-5a58eeb1482c52003ba98b27.jpg">
+            <div class="title">Malaysia</div>
+            <div class="price">10.000 $</div>
+
+            <a href="#"><img class="icon" src="https://cdn.countryflags.com/thumbs/malaysia/flag-round-250.png" /></a>
+        </div>
+
+
+        <div class="card">
+            <div class="overlay">
+                <img class="country" src="https://handluggageonly.co.uk/wp-content/uploads/2018/02/Hand-Luggage-Only-8-5.jpg">
+            </div>
+            <div class="title">Italy</div>
+            <div class="price">10.000 $</div>
+
+            <a href="#"><img width="30px" class="icon" src="https://cdn1.iconfinder.com/data/icons/european-country-flags/83/italy-512.png" /></a>
+        </div>
+
+
+        <div class="card">
+            <img class="country" src="https://www.topdeck.travel/sites/default/files/styles/hero_image_mobile/public/2018-09/HERO%201920x540-Europe-France.jpg?itok=_Dc3wMcr">
+            <div class="title">France</div>
+            <div class="price">10.000 $</div>
+
+            <a href="#"><img width="30px" class="icon" src="https://cdn.countryflags.com/thumbs/france/flag-round-250.png" /></a>
+        </div>
+
+    </div>
+</body>
+</html>
